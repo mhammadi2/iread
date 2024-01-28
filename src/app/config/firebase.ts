@@ -3,7 +3,7 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 const firebaseConfig = {
-  apiKey: "AIzaSyDs5lFKT_U_eTPvgXszl3ZF766lw9EbzHk",
+ // Api Key is removed
   authDomain: "irea-2acd0.firebaseapp.com",
   projectId: "irea-2acd0",
   storageBucket: "irea-2acd0.appspot.com",
