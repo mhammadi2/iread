@@ -3,7 +3,7 @@ import { ActionCreatorWithOptionalPayload, ActionCreatorWithPayload, ActionCreat
     SliceCaseReducers, ValidateSliceCaseReducers, createSlice } from '@reduxjs/toolkit'
     export type GenericState<T> = {
         data: T | []
-        // T is a Type as a pceholder
+        // T is a Type as a placeholder
         status: 'loading' | 'finished' | 'error'
         // Adding additional property
         errors?: any,

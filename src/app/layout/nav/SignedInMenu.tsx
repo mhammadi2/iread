@@ -24,9 +24,9 @@ export default function SignedInMenu() {
 
             <Dropdown.Item as = {Link} to = '/activities' text='Activities' icon='move'/>
             {/* <Dropdown.Item text='My profile' icon='user'/> */}
-            {/* <Dropdown.Item as={Link} to={`/profiles/${currentUser?.uid}`} text='My profile' icon='user' /> */}
+            <Dropdown.Item as={Link} to={`/profiles/${currentUser?.uid}`} text='My profile' icon='user' />
             {/* <Dropdown.Item as={Link} to='/account' text='My account' icon='settings' /> */}
-            <Dropdown.Item  text='My Profile' icon='user' />
+            {/* <Dropdown.Item  text='My Profile' icon='user' /> */}
             <Dropdown.Item onClick={handleSignOut} text='Sign Out' icon='power'/>
             </DropdownMenu>
         </Dropdown>

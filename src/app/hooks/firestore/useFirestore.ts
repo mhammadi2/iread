@@ -97,9 +97,10 @@ export const useFireStore = <T extends DocumentData>(path: string) => {
         }
     }, [dispatch, path])
 
-    //   Method to load a single document as fooleis
+    //   Method to load a single document using a usecallback function
         const loadDocument = useCallback((id: string, actions: GenericActions<T>) => {
         dispatch(actions.loading());
+
         const docRef = doc(db, path, id);
 
         const listener = onSnapshot(docRef, {
@@ -108,8 +109,9 @@ export const useFireStore = <T extends DocumentData>(path: string) => {
                     dispatch(actions.error('Document does not exist'));
                     return;
                 }
+                // if document does not exist
                 dispatch(actions.success({id: doc.id, ...doc.data()} as unknown as T))
-                // T as type of thing
+                // Unkonwn T as type of thing to avoid type error
             }
         })
         

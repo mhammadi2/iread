@@ -27,11 +27,11 @@ export default function RegisterForm() {
             await updateProfile(userCreds.user, {
                 displayName: data.displayName
             })
-            // await set(userCreds.user.uid, {
-            //     displayName: data.displayName,
-            //     email: data.email,
-            //     createdAt: Timestamp.now()
-            // })
+            await set(userCreds.user.uid, {
+                displayName: data.displayName,
+                email: data.email,
+                createdAt: Timestamp.now()
+            })
             dispatch(signIn(userCreds.user));
             dispatch(closeModal());
 
