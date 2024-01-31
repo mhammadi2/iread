@@ -3,7 +3,7 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 const firebaseConfig = {
- // Api Key is removed
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "irea-2acd0.firebaseapp.com",
   projectId: "irea-2acd0",
   storageBucket: "irea-2acd0.appspot.com",

@@ -1,11 +1,16 @@
 import React from "react";
 import {
+
   Grid,
   Header,
   Icon,
-  
+  Image,
+  Item,
+  Label,
+  Menu,
   Segment,
-  
+  Step,
+  Table,
 } from "semantic-ui-react";
 
 const style = {
