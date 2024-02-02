@@ -19,7 +19,7 @@ export default function LoginForm() {
         try {
             // await signInWithEmailAndPassword(auth, data.email, data.password);
             const result = await signInWithEmailAndPassword(auth, data.email, data.password);
-            console.log(result)
+            // console.log(result)
             dispatch(closeModal());
         } catch (error: any ) {
             // console.log(error)

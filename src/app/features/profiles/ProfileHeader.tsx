@@ -4,6 +4,9 @@ type Props = {
     profile:Profile
 }
 export default function ProfileHeader({profile}:Props) {
+    // console.log(profile.id)
+    // console.log(profile.photoURL)
+
   return (
     <Segment>
         <Grid>
@@ -11,12 +14,10 @@ export default function ProfileHeader({profile}:Props) {
                 <Item.Group>
                     <Item>
                         <Item.Image avatar size='small' src={profile.photoURL || '/user.png'} />
-                        {/* <Item.Image avatar size÷='small' src={profile.photoURL || '/user.png'} /> */}
                         <Item.Content verticalAlign='middle'>
                             <Header as='h1' 
                                 style={{display: 'block', marginBottom: 10}} 
                                 content={profile.displayName}
-
                             />
                         </Item.Content>
                     </Item>

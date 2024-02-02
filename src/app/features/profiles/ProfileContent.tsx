@@ -1,9 +1,7 @@
 import { Tab } from 'semantic-ui-react';
-import { Profile } from '../../app/types/profile';
 import ProfileAbout from './ProfileAbout';
 import ProfilePhotos from './ProfilePhotos';
-// import ProfilePhotos from './ProfilePhotos';
-// import ProfileEvents from './ProfileEvents';
+import { Profile } from '../../types/profile';
 
 type Props = {
     profile: Profile

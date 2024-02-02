@@ -37,7 +37,7 @@ export default function RegisterForm() {
 
            
         } catch (error: any) {
-            console.log(error);
+            // console.log(error);
             setError('root.serverError', {
                 type: '400', message: error.message
             })

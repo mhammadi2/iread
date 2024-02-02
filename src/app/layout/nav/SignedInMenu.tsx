@@ -6,6 +6,7 @@ import { signOut } from "firebase/auth";
 
 export default function SignedInMenu() {
     const {currentUser} = useAppSelector(state=>state.auth)
+    console.log(currentUser)
     const navigate =useNavigate();
 
   
