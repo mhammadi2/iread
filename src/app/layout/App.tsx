@@ -1,6 +1,5 @@
 import { Container } from 'semantic-ui-react'
 import NavBar from './nav/NavBar'
-import HomePage from '../features/home/HomePage'
 import { Outlet, useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
 import { useAppDispatch } from '../store/store'
@@ -8,6 +7,8 @@ import { onAuthStateChanged } from 'firebase/auth'
 import { auth } from '../config/firebase'
 import { logout, signIn } from '../features/auth/authSlice'
 import ModalManager from '../common/modals/ModalManager'
+import HomePage from '../features/home/HomePage'
+import FootBar from './footer/FootBar'
 
 function App() {
   const location = useLocation();
@@ -33,6 +34,7 @@ function App() {
       {location.pathname==='/' ? <HomePage/> : <Outlet/> }
     <ModalManager/>
     </Container>
+    <FootBar/>
     </>
   )
 }

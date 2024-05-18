@@ -5,7 +5,8 @@ import { useAppDispatch, useAppSelector } from '../../store/store'
 
 type Props = {
     children: ReactNode
-    header?: string
+    header?: string 
+    // header is optional
 } & ModalProps
 // ModalPrpos will extend the props that is available inside the model porps
 // such as the open property or onclose property

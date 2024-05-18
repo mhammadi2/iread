@@ -4,6 +4,17 @@ body{
     background-color: #c3dbc0;
 }
 
+.home-page-container {
+  display: flex;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+    url("./assets/sky-lg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  flex-direction: column;
+  height: 100vh;
+}
+
 .ui.fixed.menu{
     background-image:linear-gradient(135deg, rgb(24,42,115) 0%, rgb(33,138,174) 69%, rgb(32,167,172)89%)
 }
